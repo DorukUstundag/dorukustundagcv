@@ -89,6 +89,30 @@
         .interest-item { display: inline-block; background: #eee; padding: 5px 12px; margin-right: 5px; margin-bottom: 10px; font-size: 13px; border-radius: 2px; border-left: 3px solid #333; }
 
         .footer { padding: 40px 0; border-top: 1px solid #eee; }
+        /* FIX: Force Menu to Front on Mobile */
+        #main_menu {
+            position: relative;
+            z-index: 9999 !important; /* Forces header to the top layer */
+        }
+
+        .navbar-collapse {
+            background-color: #ffffff !important; /* Ensures menu isn't transparent */
+            position: relative;
+            z-index: 10000 !important;
+            max-height: 100vh; /* Prevents menu from being cut off */
+        }
+
+        /* Ensure the main CV content stays behind the dropdown */
+        .cv-section {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Fix for Bootstrap's container overflow */
+        .main_menu_bg {
+            overflow: visible !important;
+        }
+            
     </style>
 </head>
 
