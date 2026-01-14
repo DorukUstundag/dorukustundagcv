@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Doruk Üstündağ - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <style>
+        /* SPEED & VISIBILITY OPTIMIZATION */
+        body { opacity: 1 !important; visibility: visible !important; }
+        .preloader { display: none !important; }
+
+        /* HEADER BUTTONS */
+        .navbar-nav { margin-top: 12px; }
+        .navbar-nav li a {
+            border: 1px solid #333 !important;
+            padding: 8px 18px !important;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            color: #333 !important;
+            background: transparent;
+        }
+        .navbar-nav li a:hover { 
+            background: #333 !important; 
+            color: #fff !important; 
+        }
+
+        .navbar-brand { display: none !important; }
+
+        /* CV SECTION STYLING */
+        .cv-section { padding-top: 60px; padding-bottom: 60px; }
+        .cv-header-img { width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 5px solid #eee; margin-bottom: 20px; }
+        .cv-title { font-weight: 700; text-transform: uppercase; margin-bottom: 5px; }
+        .cv-subtitle { color: #777; margin-bottom: 20px; font-size: 18px; }
+        .section-header { border-bottom: 2px solid #ddd; margin-bottom: 20px; padding-bottom: 10px; margin-top: 40px; text-transform: uppercase; letter-spacing: 1px; color: #333; font-weight: 700; }
+        
+        .contact-info { margin-bottom: 15px; line-height: 1.8; }
+        
+        /* CRUDE SKILLS BARS WITH YEARS */
+        .skill-container { margin-bottom: 20px; }
+        .skill-label { font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block; }
+        .skill-grid { display: flex; align-items: center; gap: 10px; }
+        .skill-year-box { 
+            background: #333; 
+            color: #fff; 
+            font-size: 10px; 
+            font-weight: 700; 
+            padding: 4px 8px; 
+            min-width: 55px; 
+            text-align: center; 
+            text-transform: uppercase;
+        }
+        .skill-bar-crude { 
+            flex-grow: 1; 
+            height: 14px; 
+            background: #f0f0f0; 
+            border: 1px solid #333; 
+            position: relative; 
+        }
+        .skill-fill-crude { 
+            height: 100%; 
+            background: #333; 
+            display: block; 
+        }
+
+        .job-item { margin-bottom: 22px; position: relative; }
+        .job-title { font-weight: bold; font-size: 15px; margin: 0; color: #444; }
+        .job-company { color: #666; font-style: italic; font-size: 14px; margin-bottom: 5px; }
+        .job-date { float: right; color: #888; font-size: 13px; font-weight: 700; }
+        .job-desc { font-size: 13.5px; color: #555; line-height: 1.5; margin-top: 5px; }
+        
+        .award-list { list-style: none; padding-left: 0; }
+        .award-list li { margin-bottom: 12px; position: relative; padding-left: 20px; font-size: 14px; color: #444; }
+        .award-list li:before { content: "\f0a2"; font-family: FontAwesome; position: absolute; left: 0; color: #333; }
+        .award-year { font-weight: 700; margin-right: 5px; }
+
+        .interest-item { display: inline-block; background: #eee; padding: 5px 12px; margin-right: 5px; margin-bottom: 10px; font-size: 13px; border-radius: 2px; border-left: 3px solid #333; }
+
+        .footer { padding: 40px 0; border-top: 1px solid #eee; }
+    </style>
+</head>
+
+<body>
+    <header id="main_menu" class="header">            
+        <div class="main_menu_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="nave_menu">
+                        <nav class="navbar navbar-default" id="navmenu">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="research.html">Research</a></li>
+                                        <li><a href="talks.html">Talks</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="org_events.html">Events</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </nav>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cv-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/du.jpg" alt="Profile Photo" class="cv-header-img">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="cv-title">Doruk Üstündağ</h1>
+                    <p class="cv-subtitle">Mathematician</p>
+                    
+                    <div class="contact-info">
+                        <i class="fa fa-envelope"></i> dorukustundag@iyte.edu.tr<br>
+                        <i class="fa fa-envelope"></i> dorukustundag5@hotmail.com<br>
+                        <i class="fa fa-map-marker"></i> Izmir, Turkey
+                    </div>
+
+                    <p class="text-justify">
+                        Results-driven mathematics undergraduate (third year) at Izmir Institute of Technology with strong analytical thinking and problem-solving skills. My work focuses on number theory—particularly analytic, algebraic, and computational aspects—while aiming to bridge rigorous academic mathematics with practical, software-oriented and computational approaches developed during my studies at IZTECH.
+                    </p>
+                    <a href="assets/files/Doruk-Ustundag-CV.pdf" class="btn btn-default" style="margin-top: 10px; font-weight: 700; font-size: 11px;">DOWNLOAD CV (PDF)</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="section-header">Education</h3>
+                    <div class="job-item">
+                        <h4 class="job-title">Izmir Institute of Technology</h4>
+                        <div class="job-company">B.Sc. in Mathematics</div>
+                        <div class="job-company">High Honors (2nd Semester)</div>
+                        <div class="job-company">Honors (3rd Semester)</div>
+                        <div class="job-company">Honors (4th Semester)</div>
+                        <div class="job-company">Cum. GPA: 3.41/4.00</div>
+                        <small>2023 - 2027 (Expected)</small>
+                    </div>
+
+                    <h3 class="section-header">Technical Skills</h3>
+                    <div class="skill-container">
+                        <span class="skill-label">Python, LaTeX</span>
+                        <div class="skill-grid">
+                            <div class="skill-year-box">4+ Years</div>
+                            <div class="skill-bar-crude"><span class="skill-fill-crude" style="width: 80%"></span></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span class="skill-label">SageMath</span>
+                        <div class="skill-grid">
+                            <div class="skill-year-box">2+ Years</div>
+                            <div class="skill-bar-crude"><span class="skill-fill-crude" style="width: 60%"></span></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span class="skill-label">Matlab, HTML, CSS</span>
+                        <div class="skill-grid">
+                            <div class="skill-year-box">1+ Years</div>
+                            <div class="skill-bar-crude"><span class="skill-fill-crude" style="width: 40%"></span></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span class="skill-label">Mathematica, R</span>
+                        <div class="skill-grid">
+                            <div class="skill-year-box">0+ Years</div>
+                            <div class="skill-bar-crude"><span class="skill-fill-crude" style="width: 20%"></span></div>
+                        </div>
+                    </div>
+                    <h3 class="section-header">Languages</h3>
+                    <div class="skill-container">
+                        <span class="skill-label">Turkish</span>
+                        <div class="skill-grid">
+                            <div class="skill-year-box">Native</div>
+                            <div class="skill-bar-crude"><span class="skill-fill-crude" style="width: 100%"></span></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <span class="skill-label">English</span>
+                        <div class="skill-grid">
+                            <div class="skill-year-box">C1</div>
+                            <div class="skill-bar-crude"><span class="skill-fill-crude" style="width: 90%"></span></div>
+                        </div>
+                    </div>
+
+                    <h3 class="section-header">Community Service</h3>
+                    <div class="job-item">
+                        <h4 class="job-title">Turkish Education Association-IZTECH</h4>
+                        <div class="job-company">Project Supervisor</div>
+                    </div>
+                    <div class="job-item">
+                        <h4 class="job-title">Turkish Education Association</h4>
+                        <div class="job-company">Volunteer</div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <h3 class="section-header">Experience</h3>
+                    <div class="job-item">
+                        <span class="job-date">2024 - Present</span>
+                        <h4 class="job-title">Undergraduate Researcher</h4>
+                        <div class="job-company">Izmir Institute of Technology</div>
+                        <p class="job-desc">Working with Assoc. Prof. Haydar Göral.</p>
+                    </div>
+                    <div class="job-item">
+                        <span class="job-date">2025 - Present</span>
+                        <h4 class="job-title">Student Advisor to the Dean</h4>
+                        <div class="job-company">Izmir Institute of Technology</div>
+                        <p class="job-desc">Working with Prof. Dr. Bünyamin Akgül.</p>
+                    </div>
+
+                    <h3 class="section-header">Research Interests</h3>
+                    <div class="interest-item">Computational Number Theory</div>
+                    <div class="interest-item">Zeta Functions</div>
+                    <div class="interest-item">Algebraic Number Theory</div>
+                    <div class="interest-item">Analytic Number Theory</div>
+                    <div class="interest-item">Sums of Powers</div>
+                    <div class="interest-item">Harmonic Numbers</div>
+
+                    <h3 class="section-header">Societies</h3>
+                    <div class="job-item">
+                        <span class="job-date">2025 - Present</span>
+                        <h4 class="job-title">IZTECH Arithmetic</h4>
+                        <div class="job-company">Co-President</div>
+                    </div>
+                    <div class="job-item">
+                        <span class="job-date">2024 - 2025</span>
+                        <h4 class="job-title">IZTECH Mathematics Society</h4>
+                        <div class="job-company">President</div>
+                    </div>
+                    <div class="job-item">
+                        <span class="job-date">2023 - 2024</span>
+                        <h4 class="job-title">IZTECH Environment Society</h4>
+                        <div class="job-company">Academic Organisation Coordinator</div>
+                    </div>
+                    <div class="job-item">
+                        <span class="job-date">2023 - 2024</span>
+                        <h4 class="job-title">IZTECH Radio Society</h4>
+                        <div class="job-company">Radio Host</div>
+                    </div>
+                    <div class="job-item">
+                        <span class="job-date">2017 - Present</span>
+                        <h4 class="job-title">Turkish Education Association</h4>
+                        <div class="job-company">Fellow</div>
+                    </div>
+
+                    <h3 class="section-header">Awards</h3>
+                    <ul class="award-list">
+                        <li><span class="award-year">2026</span> - Best Poster Award - MATH415 Graduation Project IZTECH</li>
+                        <li><span class="award-year">2025</span> - Best Young Researcher Talk Certification - Izmir Mathematics Days (Ege University)</li>
+                        <li><span class="award-year">2023</span> - "Scientist Training Programme" Diploma - Turkish Education Association</li>
+                        <li><span class="award-year">2021</span> - Winners of the People's Vote - Earthbeat Film Challenge</li>
+                        <li><span class="award-year">2020</span> - Distinction Medal - Waterloo University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Made with <i class="fa fa-heart" style="color: #e74c3c;"></i> by Doruk Üstündağ 2026.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+</body>
+</html>

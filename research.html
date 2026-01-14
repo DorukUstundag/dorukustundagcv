@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Research & Notes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+
+        <style>
+            /* SPEED & VISIBILITY OPTIMIZATION */
+            body { opacity: 1 !important; visibility: visible !important; }
+            .preloader { display: none !important; }
+
+            /* STATIC HEADER NAVIGATION (Matches Talks Page) */
+            .navbar-header { float: left; }
+            
+            .btn-return-home {
+                display: inline-block;
+                margin-top: 12px;
+                padding: 8px 20px;
+                border: 2px solid #333;
+                background: #333;
+                color: #fff !important;
+                border-radius: 4px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 12px;
+                transition: all 0.3s ease;
+            }
+            .btn-return-home:hover {
+                background: transparent;
+                color: #333 !important;
+                text-decoration: none;
+            }
+            .btn-return-home i { margin-right: 8px; }
+
+            .navbar-nav { margin-top: 12px; margin-bottom: 0; }
+            .navbar-nav li a {
+                border: 1px solid #333 !important;
+                padding: 8px 18px !important;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 700;
+                color: #333 !important;
+                background: transparent;
+            }
+            .navbar-nav li a:hover {
+                background: #333 !important;
+                color: #fff !important;
+            }
+
+            /* SECTION STYLING */
+            .research-section { padding: 60px 0 40px; }
+            .notes-section { padding: 40px 0 80px; background: #fbfbfb; border-top: 1px solid #eee; }
+            
+            .section-title { 
+                font-weight: 700; 
+                text-transform: uppercase; 
+                margin-bottom: 50px; 
+                letter-spacing: 2px;
+                position: relative;
+                display: inline-block;
+            }
+            .section-title:after {
+                content: "";
+                width: 50px;
+                height: 3px;
+                background: #333;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                margin-left: -25px;
+            }
+
+            .research-card, .note-card { 
+                padding: 30px 0; 
+                border-bottom: 1px solid #eee; 
+                transition: all 0.3s;
+            }
+            .research-card:last-child, .note-card:last-child { border-bottom: none; }
+            
+            .research-tag { 
+                font-size: 10px; 
+                background: #f4f4f4; 
+                padding: 2px 10px; 
+                text-transform: uppercase; 
+                color: #666; 
+                margin-bottom: 10px; 
+                display: inline-block;
+                border-radius: 2px;
+                font-weight: 700;
+            }
+
+            .research-title { font-weight: 700; margin-bottom: 10px; color: #333; text-transform: uppercase; letter-spacing: 0.5px; }
+            .research-authors { font-style: italic; color: #777; margin-bottom: 10px; }
+            .research-abstract { font-size: 14px; color: #555; line-height: 1.6; text-align: justify; }
+            
+            /* Buttons */
+            .btn-action { 
+                background: transparent; 
+                border: 1px solid #333; 
+                color: #333; 
+                padding: 6px 16px; 
+                margin-top: 15px; 
+                font-size: 11px; 
+                font-weight: 700;
+                transition: 0.3s;
+                text-transform: uppercase;
+                border-radius: 4px;
+            }
+            .btn-action:hover { background: #333; color: #fff; text-decoration: none; }
+            
+            .cite-box { 
+                background: #f9f9f9; 
+                padding: 15px; 
+                border-left: 3px solid #333; 
+                font-family: 'Courier New', Courier, monospace; 
+                font-size: 12px; 
+                margin-bottom: 15px;
+            }
+            .cite-label { font-weight: bold; margin-bottom: 5px; display: block; color: #999; text-transform: uppercase; font-size: 10px; }
+            .footer { padding: 40px 0; border-top: 1px solid #eee; }
+        </style>
+    </head>
+    <body>
+
+        <header id="main_menu" class="header">            
+            <div class="main_menu_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="nave_menu">
+                            <nav class="navbar navbar-default" id="navmenu">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                                        </button>
+                                        <a class="btn-return-home" href="index.html">
+                                            <i class="fa fa-chevron-left"></i> Return to Main Page
+                                        </a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="research.html">Research</a></li>
+                                            <li><a href="talks.html">Talks</a></li>
+                                            <li><a href="projects.html">Projects</a></li>
+                                            <li><a href="org_events.html">Events</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>    
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="research-section">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="section-title">Publications & Research</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="research-card">
+                            <span class="research-tag">Preprint</span>
+                            <h3 class="research-title">Combinatorial Interpretation of Power Sum Polynomials and Various Divisibility Properties</h3>
+                            <div class="research-authors">Göksu, D., Üstündağ, D. (2025)</div>
+                            <p class="research-abstract">We describe a framework for giving a combinatorial interpretation to some well-known results involving the power sum polynomials. We use some set-theoretic principles, such as the inclusion-exclusion principle and the image factorization of functions, to derive results about polynomials with rational coefficients that had previously been discovered by purely arithmetic or algebraic means. With this, we give a characterization for the divisibility of a polynomial by a binomial coefficient. Also, for any positive odd number $n$ and natural numbers $a, b$, we prove that $a^n + b^n$ is divisible by $a+b$ through combinatorial means. We then computationally examine when a power sum is divisible by the sum of cubes.</p>
+                            <button class="btn btn-action" data-toggle="modal" data-target="#citeModal1"><i class="fa fa-quote-right"></i> Cite this work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="notes-section">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="section-title">Notes Edited by Me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        
+                        <div class="note-card">
+                            <span class="research-tag">Lecture Notes</span>
+                            <h3 class="research-title">Extremal Graph Theory Via Two Geometry Questions</h3>
+                            <div class="research-authors">Göral, H. (2025)</div> 
+                            <a href="assets/files/HG-extremal graph.pdf" class="btn btn-action"><i class="fa fa-download"></i> Download PDF</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="citeModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="border-radius: 4px;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Citation Formats</h4>
+                    </div>
+                    <div class="modal-body">
+                        <span class="cite-label">APA</span>
+                        <div class="cite-box">Göksu, D., & Üstündağ, D. (2025). Combinatorial interpretation of power sum polynomials and various divisibility properties [Preprint].</div>
+                        <span class="cite-label">BibTeX</span>
+                        <div class="cite-box">@unpublished{goksu_ustundag_2025,
+                        author = {G{\"o}ksu, D. and {\"U}st{\"u}nda{\u{g}}, D.},
+                        title  = {Combinatorial Interpretation of Power Sum Polynomials and Various Divisibility Properties},
+                        note   = {Preprint},
+                        year   = {2025},
+                        month  = {October}
+                        }</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <p>Made with <i class="fa fa-heart" style="color: #e74c3c;"></i> by Doruk Üstündağ 2026.</p>
+            </div>
+        </footer>
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+    </body>
+</html>
